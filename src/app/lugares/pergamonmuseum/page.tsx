@@ -1,0 +1,64 @@
+export default function Pergamonmuseum() {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <div className="bg-gradient-to-r from-amber-600 to-yellow-600 rounded-2xl p-8 text-white mb-8">
+        <h1 className="text-4xl font-bold mb-2">Das Pergamonmuseum</h1>
+        <p className="text-xl">Museo Pérgamo</p>
+      </div>
+
+      <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+        <div className="h-64 bg-gradient-to-br from-amber-200 to-yellow-300 flex items-center justify-center">
+          <span className="text-8xl">🏺</span>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        <div className="bg-white p-6 rounded-xl shadow-md">
+          <h2 className="text-xl font-bold text-green-700 mb-3">📜 Geschichte / Historia</h2>
+          <p className="text-gray-700">
+            Das Pergamonmuseum wurde 1930 eröffnet. Es ist Teil der Museuminsel und beherbergt drei große Abteilungen: das Altägyptische Museum, das Museum für Islamische Kunst und das Antikensammlung mit dem berühmten Pergamonaltar.
+          </p>
+          <p className="text-gray-600 mt-3 text-sm">
+            El Museo Pérgamo se inauguró en 1930. Es parte de la Isla de los Museos y alberga tres grandes secciones: el Museo del Antiguo Egipto, el Museo del Arte Islámico y la Colección de Antigüedades con el famoso Altar de Pérgamo.
+          </p>
+        </div>
+
+        <div className="bg-white p-6 rounded-xl shadow-md">
+          <h2 className="text-xl font-bold text-blue-700 mb-3">ℹ️ Praktische Infos / Info Práctica</h2>
+          <ul className="text-gray-700 space-y-2">
+            <li><strong>📍 Adresse:</strong> Am Kupfergraben, 10117 Berlin</li>
+            <li><strong>🚇 U-Bahn:</strong> U-Bahnhof Museumsinsel (U5)</li>
+            <li><strong>🎟️ Preis:</strong> 12€ (Erwachsene)</li>
+            <li><strong>🕐 Öffnungszeiten:</strong> 10:00 - 18:00 Uhr (Di-So)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="bg-yellow-50 border-2 border-yellow-400 rounded-xl p-6 mb-8">
+        <h2 className="text-xl font-bold text-yellow-800 mb-4">🗣️ Nützliche Sätze / Frases útiles</h2>
+        <div className="space-y-3">
+          <div className="flex flex-col md:flex-row md:items-center gap-2">
+            <span className="text-lg font-medium text-gray-800">Ich besuche das Pergamonmuseum.</span>
+            <span className="text-sm text-red-700">→ Visito el Museo Pérgamo.</span>
+          </div>
+          <div className="flex flex-col md:flex-row md:items-center gap-2">
+            <span className="text-lg font-medium text-gray-800">Ich möchte eine Eintrittskarte, bitte.</span>
+            <span className="text-sm text-red-700">→ Quisiera una entrada, por favor.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <h2 className="text-xl font-bold text-purple-700 mb-3">🗺️ Karte / Mapa</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.947183744854!2d13.3976!3d52.5169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851e6e6e6e6e6%3A0x470e36a0b3b3b3b3!2sPergamonmuseum!5e0!3m2!1ses!2sde!4v1234567890"
+          width="100%"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+        />
+      </div>
+    </div>
+  );
+}
