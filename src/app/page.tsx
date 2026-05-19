@@ -7,7 +7,7 @@ const lugares = [
     nombreES: "Puerta de Brandeburgo",
     descripcion: "El símbolo más famoso de Berlín y de la reunificación alemana.",
     color: "from-yellow-500 to-orange-500",
-    imagen: "/brandenburger-tor.avif"
+    imagen: "/brandenburger-tor.jpg"
   },
   {
     slug: "berliner-dom",

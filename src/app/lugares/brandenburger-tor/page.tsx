@@ -8,7 +8,7 @@ export default function BrandenburgerTor() {
 
       <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
         <img 
-          src="/brandenburger-tor.avif" 
+          src="/brandenburger-tor.jpg" 
           alt="Puerta de Brandeburgo" 
           className="w-full h-64 object-cover"
         />
