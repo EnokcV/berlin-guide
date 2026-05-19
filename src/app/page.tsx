@@ -6,49 +6,56 @@ const lugares = [
     nombreDE: "Das Brandenburger Tor",
     nombreES: "Puerta de Brandeburgo",
     descripcion: "El símbolo más famoso de Berlín y de la reunificación alemana.",
-    color: "from-yellow-500 to-orange-500"
+    color: "from-yellow-500 to-orange-500",
+    imagen: "/brandenburger-tor.avif"
   },
   {
     slug: "berliner-dom",
     nombreDE: "Der Berliner Dom",
     nombreES: "Catedral de Berlín",
     descripcion: "Impresionante catedral barroca a orillas del río Spree.",
-    color: "from-purple-600 to-indigo-600"
+    color: "from-purple-600 to-indigo-600",
+    imagen: "/berliner-dom.jpg"
   },
   {
     slug: "east-side-gallery",
     nombreDE: "Die Berliner Mauer",
     nombreES: "East Side Gallery",
     descripcion: "Fragmento del Muro de Berlín convertido en galería de arte.",
-    color: "from-gray-600 to-gray-800"
+    color: "from-gray-600 to-gray-800",
+    imagen: "/east-side-gallery.jpg"
   },
   {
     slug: "reichstag",
     nombreDE: "Das Reichstagsgebäude",
     nombreES: "Reichstag",
     descripcion: "Sede del Parlamento alemán con cúpula de vidrio panorámica.",
-    color: "from-blue-600 to-cyan-500"
+    color: "from-blue-600 to-cyan-500",
+    imagen: "/reichstag.jpg"
   },
   {
     slug: "alexanderplatz",
     nombreDE: "Der Alexanderplatz",
     nombreES: "Plaza Alexander",
     descripcion: "Plaza central con la famosa Torre de TV (Fernsehturm).",
-    color: "from-red-600 to-pink-600"
+    color: "from-red-600 to-pink-600",
+    imagen: "/alexanderplatz.jpg"
   },
   {
     slug: "pergamonmuseum",
     nombreDE: "Das Pergamonmuseum",
     nombreES: "Museo Pérgamo",
     descripcion: "Museo con colecciones arqueológicas mundialmente reconocidas.",
-    color: "from-amber-600 to-yellow-600"
+    color: "from-amber-600 to-yellow-600",
+    imagen: "/pergamonmuseum.jpg"
   },
   {
     slug: "tiergarten",
     nombreDE: "Der Tiergarten",
     nombreES: "Tiergarten",
     descripcion: "Gran parque urbano, el pulmon verde de la capital alemana.",
-    color: "from-green-600 to-emerald-600"
+    color: "from-green-600 to-emerald-600",
+    imagen: "/tiergarten.jpg"
   }
 ];
 
@@ -90,8 +97,12 @@ export default function Home() {
             className="block group"
           >
             <div className={`bg-gradient-to-br ${lugar.color} rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full`}>
-              <div className="h-48 bg-white/20 flex items-center justify-center">
-                <span className="text-6xl">🏛️</span>
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src={lugar.imagen} 
+                  alt={lugar.nombreES}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="p-6 bg-white">
                 <h3 className="text-xl font-bold text-gray-800 mb-1 group-hover:text-green-700 transition">

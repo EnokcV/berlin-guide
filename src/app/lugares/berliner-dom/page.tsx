@@ -7,9 +7,11 @@ export default function BerlinerDom() {
       </div>
 
       <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
-        <div className="h-64 bg-gradient-to-br from-purple-200 to-indigo-300 flex items-center justify-center">
-          <span className="text-8xl">⛪</span>
-        </div>
+        <img 
+          src="/berliner-dom.jpg" 
+          alt="Catedral de Berlín" 
+          className="w-full h-64 object-cover"
+        />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
